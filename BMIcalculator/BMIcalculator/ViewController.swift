@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     let weightTextField = UITextField()
     let calculateBtn = UIButton()
     
-    let MyColor = UIColor(red: 137.0 / 255.0, green: 70.0 / 255.0, blue: 166.0 / 255.0, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +55,7 @@ extension ViewController {
             $0.font = UIFont.boldSystemFont(ofSize: 20)
             $0.textAlignment = .center
             $0.textColor = .white
-            $0.backgroundColor = MyColor
+            $0.backgroundColor = Color.myColor1
         }
         
         [heightLbl, weightLbl].forEach {
@@ -68,7 +67,7 @@ extension ViewController {
         
         [weightTextField, heightTextField].forEach {
             $0.placeholder = "입력"
-            
+            $0.keyboardType = .numberPad
             $0.borderStyle = .roundedRect
         }
 
@@ -76,7 +75,7 @@ extension ViewController {
         [calculateBtn].forEach {
             $0.setTitle("계산", for: .normal)
             $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40)
-            $0.backgroundColor = MyColor
+            $0.backgroundColor = Color.myColor1
             $0.setTitleColor(.white, for: .normal)
             $0.layer.cornerRadius = 20
         }
