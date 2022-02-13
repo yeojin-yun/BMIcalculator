@@ -11,25 +11,17 @@ class MyLabel: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    
 
-    init(title: String) {
-        super.init(frame: CGRect(x: 0, y: 0, width: 70, height: 50))
+    init(title: String, size: CGFloat = 25) {
+        super.init(frame: CGRect(x: 0, y: 0, width: 100, height: 0))
+        layer.cornerRadius = 30
         text = title
         textAlignment = .center
-        font = UIFont.systemFont(ofSize: 25)
-        backgroundColor = Color.myColor1
-        textColor = .white
-    }
-    
-    init(result: String) {
-        super.init(frame: .zero)
-        text = result
-        textAlignment = .center
-        font = UIFont.systemFont(ofSize: 25)
+        font = UIFont.systemFont(ofSize: size)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
+

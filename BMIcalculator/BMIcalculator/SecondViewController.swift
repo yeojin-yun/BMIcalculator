@@ -9,27 +9,34 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
-    let resultLbl = UILabel()
-    let bmiLbl = UILabel()
+    let resultLbl = MyLabel(title: "저체중", size: 50)
+    let bmiLbl = MyLabel(title: "18.5")
 
     let rangeUnderWeight = MyLabel(title: "~18.5")
-    let underweight = MyLabel(result: "저체중")
+    let underweight = MyLabel(title: "저체중")
     
     let rangeNormalWeight = MyLabel(title: "18.5~")
-    let normalWeight = MyLabel(result: "정상")
+    let normalWeight = MyLabel(title: "정상")
     
     let rangeOverWeight = MyLabel(title: "23~")
-    let overWeight = MyLabel(result: "과제중")
+    let overWeight = MyLabel(title: "과제중")
     
-    let rangeHeaveWeight = MyLabel(title: "25~")
-    let heavyWeight = MyLabel(result: "비만")
+    let rangeHeavyWeight = MyLabel(title: "25~")
+    let heavyWeight = MyLabel(title: "비만")
     
-    let recalcluateBtn = UIButton()
+    let recalcluateBtn = Mybutton(title: "다시 계산하기")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         configureUI()
+    }
+}
+
+//MARK: -Event
+extension SecondViewController {
+    @objc func recalculateTapped(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -45,18 +52,14 @@ extension SecondViewController {
         resultLbl.text = "저체중"
         bmiLbl.text = "18.4"
         
-        [recalcluateBtn].forEach {
-            $0.setTitle("다시 계산하기", for: .normal)
-            $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40)
+        [rangeUnderWeight, rangeNormalWeight, rangeOverWeight, rangeHeavyWeight].forEach {
             $0.backgroundColor = Color.myColor1
-            $0.setTitleColor(.white, for: .normal)
-            $0.layer.cornerRadius = 20
+            $0.textColor = .white
         }
-        
         
     }
     final private func addTarget() {
-        
+        recalcluateBtn.addTarget(self, action: #selector(recalculateTapped(_:)), for: .touchUpInside)
     }
     
     final private func setConstraints() {
@@ -77,7 +80,7 @@ extension SecondViewController {
         overStack.axis = .horizontal
         overStack.spacing = 15
         
-        let heavyStack = UIStackView(arrangedSubviews: [rangeHeaveWeight ,heavyWeight])
+        let heavyStack = UIStackView(arrangedSubviews: [rangeHeavyWeight ,heavyWeight])
         heavyStack.axis = .horizontal
         heavyStack.spacing = 15
         
@@ -105,6 +108,13 @@ extension SecondViewController {
             
             recalcluateBtn.topAnchor.constraint(equalTo: heavyStack.bottomAnchor, constant: 100),
             recalcluateBtn.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
+            recalcluateBtn.widthAnchor.constraint(equalToConstant: 350),
+            
+            rangeUnderWeight.widthAnchor.constraint(equalToConstant: 100),
+            rangeNormalWeight.widthAnchor.constraint(equalTo: rangeUnderWeight.widthAnchor),
+            rangeOverWeight.widthAnchor.constraint(equalTo: rangeUnderWeight.widthAnchor),
+            rangeHeavyWeight.widthAnchor.constraint(equalTo: rangeUnderWeight.widthAnchor),
+            
         ])
     }
 }

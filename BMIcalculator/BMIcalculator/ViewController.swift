@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     let weightLbl = UILabel()
     let heightTextField = UITextField()
     let weightTextField = UITextField()
-    let calculateBtn = UIButton()
+    let calculateBtn = Mybutton(title: "BMI 계산")
     
     
     override func viewDidLoad() {
@@ -71,14 +71,6 @@ extension ViewController {
             $0.borderStyle = .roundedRect
         }
 
-        
-        [calculateBtn].forEach {
-            $0.setTitle("계산", for: .normal)
-            $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 40)
-            $0.backgroundColor = Color.myColor1
-            $0.setTitleColor(.white, for: .normal)
-            $0.layer.cornerRadius = 20
-        }
     }
     
     final private func addTarget() {
@@ -118,7 +110,7 @@ extension ViewController {
             
             calculateBtn.topAnchor.constraint(equalTo: rightStack.bottomAnchor, constant: 120),
             calculateBtn.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            calculateBtn.widthAnchor.constraint(equalToConstant: 150)
+            calculateBtn.widthAnchor.constraint(equalToConstant: 250)
         ])
     }
 }

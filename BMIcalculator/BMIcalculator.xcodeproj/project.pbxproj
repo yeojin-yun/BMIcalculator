@@ -10,6 +10,7 @@
 		0C7228A327B5660F00426470 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7228A227B5660F00426470 /* SecondViewController.swift */; };
 		0C7228A527B7963800426470 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7228A427B7963800426470 /* Constant.swift */; };
 		0C7228A727B79C7600426470 /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7228A627B79C7600426470 /* MyLabel.swift */; };
+		0CB18BBD27B91D0B00DC7DD5 /* MyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB18BBC27B91D0B00DC7DD5 /* MyButton.swift */; };
 		0CC02F1D27B3F8C60035F4FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC02F1C27B3F8C60035F4FE /* AppDelegate.swift */; };
 		0CC02F1F27B3F8C60035F4FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC02F1E27B3F8C60035F4FE /* SceneDelegate.swift */; };
 		0CC02F2127B3F8C60035F4FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC02F2027B3F8C60035F4FE /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		0C7228A227B5660F00426470 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0C7228A427B7963800426470 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0C7228A627B79C7600426470 /* MyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLabel.swift; sourceTree = "<group>"; };
+		0CB18BBC27B91D0B00DC7DD5 /* MyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyButton.swift; sourceTree = "<group>"; };
 		0CC02F1927B3F8C60035F4FE /* BMIcalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMIcalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC02F1C27B3F8C60035F4FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC02F1E27B3F8C60035F4FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				0C7228A227B5660F00426470 /* SecondViewController.swift */,
 				0C7228A427B7963800426470 /* Constant.swift */,
 				0C7228A627B79C7600426470 /* MyLabel.swift */,
+				0CB18BBC27B91D0B00DC7DD5 /* MyButton.swift */,
 			);
 			path = BMIcalculator;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C7228A327B5660F00426470 /* SecondViewController.swift in Sources */,
+				0CB18BBD27B91D0B00DC7DD5 /* MyButton.swift in Sources */,
 				0CC02F2127B3F8C60035F4FE /* ViewController.swift in Sources */,
 				0C7228A727B79C7600426470 /* MyLabel.swift in Sources */,
 				0C7228A527B7963800426470 /* Constant.swift in Sources */,
