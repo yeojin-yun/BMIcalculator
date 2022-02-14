@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
     
     let mainLbl = UILabel()
@@ -24,6 +26,11 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+//MARK: -UITextDelegate
+extension ViewController: UITextViewDelegate {
+    
 }
 
 //MARK: -Event
@@ -67,7 +74,7 @@ extension ViewController {
         
         [weightTextField, heightTextField].forEach {
             $0.placeholder = "입력"
-            $0.keyboardType = .numberPad
+            $0.keyboardType = .decimalPad
             $0.borderStyle = .roundedRect
         }
 
