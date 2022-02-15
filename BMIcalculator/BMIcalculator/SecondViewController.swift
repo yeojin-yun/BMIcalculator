@@ -9,6 +9,7 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    
     let resultLbl = MyLabel(title: "저체중", size: 50)
     let bmiLbl = MyLabel(title: "18.5")
 
@@ -51,8 +52,11 @@ extension SecondViewController {
     }
     
     final private func setAttributes() {
-        resultLbl.text = "저체중"
-        bmiLbl.text = "18.4"
+        let bmi = BMI()
+        print("📍: \(bmi.bmiValue)")
+        resultLbl.text = String(bmi.advice)
+        
+        bmiLbl.text = String(bmi.bmiValue)
         
         [rangeUnderWeight, rangeNormalWeight, rangeOverWeight, rangeHeavyWeight].forEach {
             $0.backgroundColor = Color.myColor1

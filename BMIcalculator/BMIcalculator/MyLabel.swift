@@ -14,10 +14,10 @@ class MyLabel: UILabel {
 
     init(title: String, size: CGFloat = 25) {
         super.init(frame: CGRect(x: 0, y: 0, width: 100, height: 0))
+        font = UIFont(name: "SongMyung-Regular", size: size)
         layer.cornerRadius = 30
         text = title
         textAlignment = .center
-        font = UIFont.systemFont(ofSize: size)
     }
     
     required init?(coder: NSCoder) {

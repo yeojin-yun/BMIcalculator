@@ -17,6 +17,7 @@ class Mybutton: UIButton {
         super.init(frame: .zero)
         setTitle(title, for: .normal)
         titleLabel?.font = UIFont.boldSystemFont(ofSize: 40)
+        titleLabel?.font = UIFont(name: "SongMyung-Regular", size: 40)
         backgroundColor = Color.myColor1
         setTitleColor(.white, for: .normal)
         layer.cornerRadius = 20

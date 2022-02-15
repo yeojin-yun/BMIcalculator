@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4A937727BB57510064B30A /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A937627BB57510064B30A /* BMI.swift */; };
+		0C4A937927BB5B7C0064B30A /* Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A937827BB5B7C0064B30A /* Calculate.swift */; };
+		0C4A937D27BBB05E0064B30A /* SongMyung-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A937C27BBB05E0064B30A /* SongMyung-Regular.ttf */; };
 		0C7228A327B5660F00426470 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7228A227B5660F00426470 /* SecondViewController.swift */; };
 		0C7228A527B7963800426470 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7228A427B7963800426470 /* Constant.swift */; };
 		0C7228A727B79C7600426470 /* MyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7228A627B79C7600426470 /* MyLabel.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C4A937627BB57510064B30A /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
+		0C4A937827BB5B7C0064B30A /* Calculate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculate.swift; sourceTree = "<group>"; };
+		0C4A937C27BBB05E0064B30A /* SongMyung-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SongMyung-Regular.ttf"; sourceTree = "<group>"; };
 		0C7228A227B5660F00426470 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		0C7228A427B7963800426470 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0C7228A627B79C7600426470 /* MyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLabel.swift; sourceTree = "<group>"; };
@@ -75,6 +81,9 @@
 				0C7228A427B7963800426470 /* Constant.swift */,
 				0C7228A627B79C7600426470 /* MyLabel.swift */,
 				0CB18BBC27B91D0B00DC7DD5 /* MyButton.swift */,
+				0C4A937627BB57510064B30A /* BMI.swift */,
+				0C4A937827BB5B7C0064B30A /* Calculate.swift */,
+				0C4A937C27BBB05E0064B30A /* SongMyung-Regular.ttf */,
 			);
 			path = BMIcalculator;
 			sourceTree = "<group>";
@@ -140,6 +149,7 @@
 				0CC02F2927B3F8C80035F4FE /* LaunchScreen.storyboard in Resources */,
 				0CC02F2627B3F8C80035F4FE /* Assets.xcassets in Resources */,
 				0CC02F2427B3F8C60035F4FE /* Main.storyboard in Resources */,
+				0C4A937D27BBB05E0064B30A /* SongMyung-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +163,9 @@
 				0C7228A327B5660F00426470 /* SecondViewController.swift in Sources */,
 				0CB18BBD27B91D0B00DC7DD5 /* MyButton.swift in Sources */,
 				0CC02F2127B3F8C60035F4FE /* ViewController.swift in Sources */,
+				0C4A937927BB5B7C0064B30A /* Calculate.swift in Sources */,
 				0C7228A727B79C7600426470 /* MyLabel.swift in Sources */,
+				0C4A937727BB57510064B30A /* BMI.swift in Sources */,
 				0C7228A527B7963800426470 /* Constant.swift in Sources */,
 				0CC02F1D27B3F8C60035F4FE /* AppDelegate.swift in Sources */,
 				0CC02F1F27B3F8C60035F4FE /* SceneDelegate.swift in Sources */,
