@@ -7,6 +7,6 @@
 
 import Foundation
 struct BMI {
-    var bmiValue : Float = 18.5
-    var advice : String = "정상"
+    var bmiValue : Float
+    var advice : String
 }

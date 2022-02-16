@@ -42,11 +42,6 @@ extension ViewController: UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
-    
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        heightTextField.placeholder = ""
-        weightTextField.placeholder = ""
-    }
 }
 
 //MARK: -Event
@@ -61,8 +56,13 @@ extension ViewController {
         guard let weight = weightTextField.text else { return }
         
         calculate.calculateBMI(height: height, weight: weight)
+        
+        secondVC.bmiValue = calculate.getBmiValue()
+        secondVC.advice = calculate.getAdvice()
+        
         heightTextField.text = ""
         weightTextField.text = ""
+        print("🙏🏻: \(secondVC.bmiValue), \(secondVC.advice)")
     }
 }
 

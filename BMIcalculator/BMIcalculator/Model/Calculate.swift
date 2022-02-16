@@ -17,7 +17,6 @@ struct Calculate {
         let bmiValue = weightValue / (heightValue * heightValue) * 10000
         if bmiValue  < 18.5 {
             bmi = BMI(bmiValue: bmiValue, advice: "저체중")
-            
         } else if bmiValue < 23 {
             bmi = BMI(bmiValue: bmiValue, advice: "정상")
         } else if bmiValue < 25 {
@@ -25,19 +24,18 @@ struct Calculate {
         } else {
             bmi = BMI(bmiValue: bmiValue, advice: "비만")
         }
-        print(bmiValue)
-        print(bmi!)
     }
     
     
     func getBmiValue() -> String {
-        guard let safeValue = bmi?.bmiValue else { fatalError() }
-        let bmiToDecimalPlace = String(format: "%.1f", safeValue / 10000)
+        let safe = bmi?.bmiValue ?? 0.0
+        print("safe: \(safe)")
+        let bmiToDecimalPlace = String(format: "%.1f", safe)
+        print("Decimal: \(bmiToDecimalPlace)")
         return bmiToDecimalPlace
     }
     
     func getAdvice() -> String {
-        return bmi?.advice ?? "No Advice"
-        
+        return bmi?.advice ?? ""
     }
 }

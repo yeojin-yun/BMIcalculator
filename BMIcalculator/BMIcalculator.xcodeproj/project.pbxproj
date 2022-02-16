@@ -51,6 +51,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C30786227BD1C9D00030076 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0C4A937627BB57510064B30A /* BMI.swift */,
+				0C4A937827BB5B7C0064B30A /* Calculate.swift */,
+				0C7228A427B7963800426470 /* Constant.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0C30786327BD1CBF00030076 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0CC02F2227B3F8C60035F4FE /* Main.storyboard */,
+				0CB18BBC27B91D0B00DC7DD5 /* MyButton.swift */,
+				0C7228A627B79C7600426470 /* MyLabel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0C30786427BD1CD700030076 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CC02F2027B3F8C60035F4FE /* ViewController.swift */,
+				0C7228A227B5660F00426470 /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0C30786527BD1CF600030076 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				0C4A937C27BBB05E0064B30A /* SongMyung-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		0CC02F1027B3F8C60035F4FE = {
 			isa = PBXGroup;
 			children = (
@@ -70,20 +107,15 @@
 		0CC02F1B27B3F8C60035F4FE /* BMIcalculator */ = {
 			isa = PBXGroup;
 			children = (
-				0CC02F1C27B3F8C60035F4FE /* AppDelegate.swift */,
+				0C30786227BD1C9D00030076 /* Model */,
+				0C30786327BD1CBF00030076 /* View */,
+				0C30786427BD1CD700030076 /* Controller */,
 				0CC02F1E27B3F8C60035F4FE /* SceneDelegate.swift */,
-				0CC02F2027B3F8C60035F4FE /* ViewController.swift */,
-				0CC02F2227B3F8C60035F4FE /* Main.storyboard */,
+				0CC02F1C27B3F8C60035F4FE /* AppDelegate.swift */,
 				0CC02F2527B3F8C80035F4FE /* Assets.xcassets */,
 				0CC02F2727B3F8C80035F4FE /* LaunchScreen.storyboard */,
 				0CC02F2A27B3F8C80035F4FE /* Info.plist */,
-				0C7228A227B5660F00426470 /* SecondViewController.swift */,
-				0C7228A427B7963800426470 /* Constant.swift */,
-				0C7228A627B79C7600426470 /* MyLabel.swift */,
-				0CB18BBC27B91D0B00DC7DD5 /* MyButton.swift */,
-				0C4A937627BB57510064B30A /* BMI.swift */,
-				0C4A937827BB5B7C0064B30A /* Calculate.swift */,
-				0C4A937C27BBB05E0064B30A /* SongMyung-Regular.ttf */,
+				0C30786527BD1CF600030076 /* Font */,
 			);
 			path = BMIcalculator;
 			sourceTree = "<group>";
